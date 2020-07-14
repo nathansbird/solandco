@@ -9,7 +9,7 @@ import store from './redux/store/index';
 
 const client = Client.buildClient({
   storefrontAccessToken: 'cfd1ba648c32c5243a307171fe854bb8',
-  domain: 'thesolandco.com'
+  domain: 'thesolandco.myshopify.com'
 });
 store.dispatch({type: 'CLIENT_CREATED', payload: client});
 

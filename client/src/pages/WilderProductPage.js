@@ -34,7 +34,10 @@ const WilderProductPage = ({getStock, createCheckout, saveToCart, store}) => {
   }
 
   useEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    window.scrollTo(0, 0);
     document.title = "Sol & Co - The Wilder Pant";
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     getStock(store.client);
     createCheckout(store.client);

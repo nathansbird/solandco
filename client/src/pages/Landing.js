@@ -11,6 +11,8 @@ const Landing = ({createCheckout, getStock, store}) => {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
     document.title = "Sol & Co - Welcome";
 
     window.addEventListener('scroll', (e) => {setScroll(window.scrollY > 5)});
@@ -42,16 +44,7 @@ const Landing = ({createCheckout, getStock, store}) => {
         </div>
       </div>
       <div id="first_page_content">
-        <div id="bottom_half"></div>
-        <div id="center_image_container">
-          <img id="center"/>
-          {/*<h1 id="welcome_text">ETHICAL<br/>CLOTHING</h1>*/}
-        </div>
-        {/*<div id="right_image_container"></div>*/}
-        {/*<div id="left_image_container"></div>*/}
-        <div id="center_text_container">
-          <h1 id="welcome_text"></h1>
-        </div>
+        <div id="center_image_container"></div>
         <div id="scroll_text">
           <p id="title">SCROLL</p>
           <div id="line"></div>
