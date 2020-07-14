@@ -34,6 +34,8 @@ const WilderProductPage = ({getStock, createCheckout, saveToCart, store}) => {
   }
 
   useEffect(() => {
+    document.title = "Sol & Co - The Wilder Pant";
+
     getStock(store.client);
     createCheckout(store.client);
 
@@ -60,7 +62,6 @@ const WilderProductPage = ({getStock, createCheckout, saveToCart, store}) => {
 
   const selectedId = () => {
     if(!store.loading){
-      console.log(store.inventory.filter((item) => item.color == color).filter((item) => item.size == size)[0].id);
       return store.inventory.filter((item) => item.color == color).filter((item) => item.size == size)[0].id;
     }
 
@@ -100,7 +101,7 @@ const WilderProductPage = ({getStock, createCheckout, saveToCart, store}) => {
 
             <div id="wp_description_container">
               <h1>Wilder Pant</h1>
-              <p>The Wilder Pant is a uni-sex jogger.  Our jogger is quick-dry, ethically produced, culturally sensitive, and made from 100% recycled materials.<br/><br/>It is lightweight enough to workout in and stylish enough to wear to a business meeting. It is fair trade manufactured, Bluesign Certified and Global Recycled Standard Certified.</p>
+              <p>The Wilder Pant is a jogger that blurs the lines of a business professional and activewear style. It is quick-dry, ethically produced, culturally sensitive, and made from 100% recycled materials.<br/><br/>The lightweight material makes it easy to work out in, yet the style makes business meetings and daily life a breeze. It is fair trade manufactured, Bluesign Certified, and Global Recycled Standard Certified.</p>
             </div>
 
             <div id="wp_social_container">

@@ -258,13 +258,11 @@
   }
 
   #second_page_content{
-    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
     display: flex;
     position: relative;
-    padding-bottom: 12vh;
 
     #right{
-      height: calc(100% - 4px);
       flex: 3;
       display: flex;
       flex-direction: column;
@@ -290,7 +288,6 @@
     }
 
     #left{
-      height: 100%;
       background: url(../assets/new/third.jpg);
       background-position: center;
       background-size: cover;
@@ -299,11 +296,12 @@
   }
 
   #third_page_content{
-    height: calc(80vh - 72px);
+    min-height: calc(100vh - 72px);
     display: flex;
     position: relative;
     background: #fff;
     overflow: hidden;
+    align-items: center;
 
     #left{
       height: 100%;
@@ -318,6 +316,8 @@
       position: relative;
       align-items: center;
       margin-left: 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
 
       h1{
         font-family: 'AvenirBold';
@@ -332,19 +332,9 @@
         font-size: 1.5rem;
         text-decoration: none;
       }
-      
-      #divider{
-        height: 2px;
-        width: 20%;
-        background: rgba(0, 0, 0, 1.0);
-        margin-left: 10px;
-        margin-top: 24px;
-        margin-bottom: 24px;
-      }
 
       p{
         font-family: 'AvenirRegular';
-        margin-bottom: 64px;
         color: #fff;
         font-size: 1rem;
         letter-spacing: 2px;
@@ -376,7 +366,7 @@
     }
 
     #right{
-      height: 100%;
+      height: calc(100vh - 72px);
       flex: 3;
       display: flex;
       background: url(../assets/black-product-min.png);
@@ -388,12 +378,11 @@
   }
 
   #sixth_page_content{
-    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
     display: flex;
     position: relative;
 
     #right{
-      height: calc(100% - 4px);
       flex: 3;
       display: flex;
       flex-direction: column;
@@ -418,7 +407,6 @@
     }
 
     #left{
-      height: 100%;
       background: url(../assets/new/fourth.jpg);
       background-position: center;
       background-size: cover;
@@ -427,14 +415,13 @@
   }
 
   #fourth_page_content{
-    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
     display: flex;
     position: relative;
     border-bottom: 2px solid #ce9b81;
     border-top: 2px solid #ce9b81;
 
     #left{
-      height: 100%;
       flex: 3;
       display: flex;
       flex-direction: column;
@@ -458,7 +445,6 @@
     }
 
     #right{
-      height: 100%;
       background: url(../assets/lexi.png);
       background-position: center;
       background-size: cover;
@@ -613,10 +599,12 @@
       border-bottom: 2px solid #ce9b81;
     }
 
-    #scroll_text{
-      transition-delay: 0ms !important;
-      opacity: 0.0 !important;
-      margin-bottom: 16px;
+    #first_page_content{
+      #scroll_text{
+        transition-delay: 0ms;
+        opacity: 0.0;
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -657,161 +645,181 @@
 }
 
 @media screen and (max-width: 800px) {
-  #center_image_container{
-    width: 100% !important;
-  }
-
-  #social_container{
-    left: 24px !important;
-  }
-
-  #hashtag_container{
-    right: 24px !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-
-  #scroll_text{
-    #line{
-      height: 0px !important;
-    }
-  }
-
-  #second_page_content{
-    flex-direction: column !important;
-
-    #right{
-      height: unset !important;
-      border: none !important;
-      position: absolute !important;
-      top: 64px !important;
-      bottom: 164px !important;
-      right: 48px !important;
-      left: 48px !important;
-      background: #fff;
-
-      h1{
-        width: 80% !important
+  #landing_page{
+    #first_page_content{
+      #center_image_container{
+        width: 100%;
       }
 
-      p{
-        width: 80% !important
+      #social_container{
+        left: 24px;
+      }
+    
+      #hashtag_container{
+        right: 24px;
       }
     }
-  }
 
-  #third_page_content{
-    flex-direction: column-reverse !important;
-    #right{
-      display: none !important;
-    }
-    #left{
-      h1{
-        font-size: 5rem !important;
-        line-height: 5rem !important;
+    #second_page_content{
+      flex-direction: column;
+      background: url(../assets/new/third.jpg);
+      background-position: center;
+      background-size: cover;
+
+      #left{
+        display: none;
+      }
+  
+      #right{
+        height: unset;
+        border: none;
+        margin: 64px 48px;
+        padding-bottom: 32px;
+        background: #fff;
+  
+        h1{
+          width: 80%
+        }
+  
+        p{
+          width: 80%
+        }
       }
     }
-  }
+  
+    #fourth_page_content{
+      flex-direction: column;
+      background: url(../assets/lexi.png);
+      background-position: center;
+      background-size: cover;
 
-  #fourth_page_content{
-    flex-direction: column !important;
-
-    #left{
-      height: unset !important;
-      border: none !important;
-      position: absolute !important;
-      top: 64px !important;
-      bottom: 64px !important;
-      right: 48px !important;
-      left: 48px !important;
-      background: #fff;
-
-      h1{
-        width: 80% !important
+      #right{
+        display: none;
       }
-
-      p{
-        width: 80% !important
+  
+      #left{
+        height: unset;
+        border: none;
+        margin: 64px 48px;
+        padding-bottom: 32px;
+        background: #fff;
+  
+        h1{
+          width: 80%
+        }
+  
+        p{
+          width: 80%
+        }
       }
     }
-  }
-
-  #fifth_page_content{
-    flex-direction: column !important;
-    height: unset !important;
-
-    #left{
-      padding-bottom: 48px !important;
-      border-right: none !important;
-      border-bottom: 2px solid #ce9b81;
-    }
-
-    #right{
-      padding-bottom: 32px !important;
-    }
-  }
-
-  #sixth_page_content{
-    flex-direction: column !important;
-
-    #right{
-      height: unset !important;
-      border: none !important;
-      position: absolute !important;
-      top: 64px !important;
-      bottom: 64px !important;
-      right: 48px !important;
-      left: 48px !important;
-      background: #fff;
-
-      h1{
-        width: 80% !important
+  
+    #fifth_page_content{
+      flex-direction: column;
+      height: unset;
+  
+      #left{
+        padding-bottom: 48px;
+        border-right: none;
+        border-bottom: 2px solid #ce9b81;
       }
+  
+      #right{
+        padding-bottom: 32px;
+      }
+    }
 
-      p{
-        width: 80% !important
+    #sixth_page_content{
+      flex-direction: column;
+      background: url(../assets/new/fourth.jpg);
+      background-position: center;
+      background-size: cover;
+
+      #left{
+        display: none;
+      }
+  
+      #right{
+        height: unset;
+        border: none;
+        margin: 64px 48px;
+        padding-bottom: 32px;
+        background: #fff;
+  
+        h1{
+          width: 80%
+        }
+  
+        p{
+          width: 80%
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-
-  #second_page_content{
-    flex-direction: column !important;
-
-    #right{
-      top: 0px !important;
-      bottom: 80px !important;
-      right: 0px !important;
-      left: 0px !important;
-      border-top: 2px solid #ce9b81 !important;
-      border-bottom: 2px solid #ce9b81 !important;
+  #landing_page{
+    #navbar{
+      height: 64px;
     }
-  }
 
-  #sixth_page_content{
-    flex-direction: column !important;
-
-    #right{
-      top: 0px !important;
-      bottom: 0px !important;
-      right: 0px !important;
-      left: 0px !important;
-      border-top: 2px solid #ce9b81 !important;
-      border-bottom: none;
+    #first_page_content{
+      #center_image_container{
+        height: calc(100% - 164px);
+        margin-top: -18px;
+      }
+    
+      #scroll_text{
+        bottom: 100px;
+        color: #fff;
+    
+        #line{
+          height: 20px;
+          background: #fff;
+        }
+      }
     }
-  }
 
-  #fourth_page_content{
-    flex-direction: column !important;
+    #second_page_content{
+      flex-direction: column;
+  
+      #right{
+        border-top: 2px solid #ce9b81;
+        border-bottom: 2px solid #ce9b81;
+        margin: 0px;
+      }
+    }
 
-    #left{
-      top: 0px !important;
-      bottom: 0px !important;
-      right: 0px !important;
-      left: 0px !important;
+    #third_page_content{
+      flex-direction: column-reverse;
+      #right{
+        display: none;
+      }
+      #left{
+        h1{
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+      }
+    }
+  
+    #sixth_page_content{
+      flex-direction: column;
+  
+      #right{
+        border-top: 2px solid #ce9b81;
+        border-bottom: none;
+        margin: 0px;
+      }
+    }
+  
+    #fourth_page_content{
+      flex-direction: column;
+  
+      #left{
+        margin: 0px;
+      }
     }
   }
 }

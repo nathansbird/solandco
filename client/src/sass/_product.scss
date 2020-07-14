@@ -77,25 +77,35 @@
       #wp_background_container{
         position: absolute;
         width: 100%;
+        height: calc(100% - 106px);
+        top: 74px;
         transform: scale(1.0);
         opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         transition-timing-function: cubic-bezier(.2,.87,0,.99);
         transition-duration: 1000ms;
         transition-delay: 500ms;
+        
         div{
           position: absolute;
-          top: 20px;
+          top: 0px;
           right: 32px;
           left: 32px;
-          bottom: 20px;
+          bottom: 0px;
           background-color: #fff;
+        }
+
+        h1{
+          margin: 0px;
         }
   
         #wp_background_1{
           font-family: 'AvenirBold';
           font-size: 12rem;
           text-align: start;
-          margin-bottom: -64px;
+          margin-bottom: -32px;
           transition: transform 1s cubic-bezier(.2,.87,0,.99) 1000ms, color 1s cubic-bezier(.2,.87,0,.99) 0ms;
           transform: translateX(0px);
         }
@@ -103,8 +113,8 @@
         #wp_background_2{
           font-family: 'AvenirBold';
           font-size: 12rem;
-          margin-top: -48px;
-          margin-bottom: -48px;
+          margin-top: -24px;
+          margin-bottom: -24px;
           transition-timing-function: cubic-bezier(.2,.87,0,.99);
           transition-duration: 1000ms;
           transition-delay: 1000ms;
@@ -116,7 +126,7 @@
         #wp_background_3{
           font-family: 'AvenirBold';
           font-size: 12rem;
-          margin-top: -48px;
+          margin-top: -24px;
           transition-timing-function: cubic-bezier(.2,.87,0,.99);
           transition-duration: 1000ms;
           transition-delay: 1000ms;
