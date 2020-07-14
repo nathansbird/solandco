@@ -80,39 +80,42 @@ const WilderProductPage = ({getStock, createCheckout, saveToCart, store}) => {
       {redirect && <Redirect to="/"/>}
       <div id="wilder_product_page">
         <div id="page_content">
-          <div id="div1" className={hidden ? "hidden" : ""}>
-            <div id="navbar">
-              <div id="back_nav">
-                <i onClick={navBack} className="material-icons">chevron_left</i>
-                <p onClick={navBack}>BACK</p>
+          <div id="top_div">
+            <div id="div1" className={hidden ? "hidden" : ""}>
+              <div id="navbar">
+                <div id="back_nav">
+                  <i onClick={navBack} className="material-icons">chevron_left</i>
+                  <p onClick={navBack}>BACK</p>
+                </div>
+                <div id="cart_indicator" className={store.cart.length > 0 ? "" : "gone"} onClick={openShopify}>
+                  <i className="material-icons cart_button">shopping_cart</i>
+                  <p id="number_indicator">{store.cart.length}</p>
+                </div>
               </div>
-              <div id="cart_indicator" className={store.cart.length > 0 ? "" : "gone"} onClick={openShopify}>
-                <i className="material-icons cart_button">shopping_cart</i>
-                <p id="number_indicator">{store.cart.length}</p>
+
+              <div id="wp_background_container">
+                <div></div>
+                <h1 id="wp_background_1" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>SOL</h1>
+                <h1 id="wp_background_2" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>&amp;</h1>
+                <h1 id="wp_background_3" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>CO</h1>
+              </div>
+
+              <div id="wp_description_container">
+                <h1>Wilder Pant</h1>
+                <p>The Wilder Pant is a jogger that blurs the lines of a business professional and activewear style. It is quick-dry, ethically produced, culturally sensitive, and made from 100% recycled materials.<br/><br/>The lightweight material makes it easy to work out in, yet the style makes business meetings and daily life a breeze. It is fair trade manufactured, Bluesign Certified, and Global Recycled Standard Certified.</p>
+              </div>
+
+              <div id="wp_social_container">
+                <a href="https://www.facebook.com/thesolandco" target="_blank"><img id="wp_social_facebook" src={facebookIcon}></img></a>
+                <a href="https://www.instagram.com/thesolandco/" target="_blank"><img id="wp_social_instagram" src={instagramIcon}></img></a>
               </div>
             </div>
-
-            <div id="wp_background_container">
-              <div></div>
-              <h1 id="wp_background_1" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>SOL</h1>
-              <h1 id="wp_background_2" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>&amp;</h1>
-              <h1 id="wp_background_3" style={{color: color == "Green" ? "rgba(0, 50, 0, 0.2)" : "rgba(220, 204, 181, 1.0)"}}>CO</h1>
-            </div>
-
-            <div id="wp_description_container">
-              <h1>Wilder Pant</h1>
-              <p>The Wilder Pant is a jogger that blurs the lines of a business professional and activewear style. It is quick-dry, ethically produced, culturally sensitive, and made from 100% recycled materials.<br/><br/>The lightweight material makes it easy to work out in, yet the style makes business meetings and daily life a breeze. It is fair trade manufactured, Bluesign Certified, and Global Recycled Standard Certified.</p>
-            </div>
-
-            <div id="wp_social_container">
-              <a href="https://www.facebook.com/thesolandco" target="_blank"><img id="wp_social_facebook" src={facebookIcon}></img></a>
-              <a href="https://www.instagram.com/thesolandco/" target="_blank"><img id="wp_social_instagram" src={instagramIcon}></img></a>
+            <div id="div2">
+              <div id="black_product_image" className={hidden || color != "Black" ? "hidden" : ""}></div>
+              <div id="green_product_image" className={hidden || color != "Green" ? "hidden" : ""}></div>
             </div>
           </div>
-          <div id="div2">
-            <div id="black_product_image" className={hidden || color != "Black" ? "hidden" : ""}></div>
-            <div id="green_product_image" className={hidden || color != "Green" ? "hidden" : ""}></div>
-          </div>
+          
           <div id="div3" className={hidden ? "hidden" : ""}>
             <div id="options_upper">
               <div id="size_container">
