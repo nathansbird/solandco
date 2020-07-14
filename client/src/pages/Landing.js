@@ -66,7 +66,7 @@ const Landing = ({createCheckout, getStock, store}) => {
         <div id="left"></div>
         <div id="right">
           <h1>Our Mission</h1>
-          <p>The Sol &amp; Co vision is to love and empower every human we come in contact with.<br/><br/>We desire for each of our customers to feel comfortable, confident and loved in our clothing.<br/><br/>We desire for the people making our clothing to feel empowered, cared for, and seen at all times.<br/><br/>We desire to eliminate waste in manufacturing and see our earth looking its best.</p>
+          <p>Sol & Co was created to break the norms in the fashion industry by being transparent throughout our entire process. We go to impoverished nations to bring jobs and hope in communities that need it the most. Sol & Co empowers locals by teaching them sewing basics and the fundamentals of running and sustaining a business. Our current hubs or “trade schools” are located from Southeast Asia to Central America and serve as a safe place for individuals to work with exceptional wages and a loving community.<br/><br/>In the Sol & Co locations, we bring in women who have been living in extreme poverty to teach them how to sew and provide jobs for them and their families. We have started small to help eradicate big-time manufacturers and the injustices that occur in them. With a dream and a sewing machine we now employ 20 plus women who were previously stuck in the vicious cycle of poverty.</p>
         </div>
       </div>
       <div id="third_page_content">
@@ -78,10 +78,17 @@ const Landing = ({createCheckout, getStock, store}) => {
         </div>
         <div id="right"></div>
       </div>
+      <div id="sixth_page_content">
+        <div id="left"></div>
+        <div id="right">
+          <h1>Our Mission - Cont.</h1>
+          <p>Sol & Co not only serves to be transparent and ethical in production but we strive to nurture and care for our earth. At Sol & Co we vow to be responsible and loving to the environment so every product is made out of 100% recycled materials. Our Wilder pant has been crafted by recycling fishnets and plastic waste found in oceans around the world to make the nylon in our pants.<br/><br/>Finally, Sol & Co exists to empower and love everyone who purchases our clothing by listening and loving each woman and her body type. We have done the unthinkable but creating a brand that merges business professional and athletic wear. As Sol & Co grows we dedicate our time to hearing our customers and crafting clothing they ask for. We design products for every body type and any other desire women might wish to see in the fashion industry.</p>
+        </div>
+      </div>
       <div id="fourth_page_content">
         <div id="left">
           <h1>About Us</h1>
-          <p>This is a paragraph about Lexi, Kyla, and everything it took to get Sol &amp; Co to where it is today. In addition to having no meaning, this paragraph was written by Nathan, a developer.<br/><br/>Since he is not a <i>legitimate</i> member of the team, these words should probably not be regarded as an accurate representation of the Sol &amp; Co story. So if, this isn't the <i>real</i> Sol &amp; Co story, what is? Well, that's for another time.</p>
+          <p>Hey you guys, I am Lexi Grisanti! I founded Sol & Co out of a deep desire of my heart to serve women around the world.<br/><br/>In 2017, I lived in various developing countries around the world witnessing joblessness among women and a lack of morality in the manufacturing industry. My heart broke over the working conditions in factories, the trash that so commonly filled the streets, and hopelessness among women desperate to provide for their families.<br/><br/>From living in refugee camps to fish farming in Cambodia, I witnessed poverty and joblessness in many different ways. I was heartbroken that I would go back to my regular life and the people I shared a life with would remain in the vicious cycle of poverty. Influenced by these dire conditions, Sol & Co was born.<br/><br/>Fueled by my passion for change, art, creativity, and my active yet professional lifestyle I created a brand that fulfilled all these desires. </p>
         </div>
         <div id="right">
           
