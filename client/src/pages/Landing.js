@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import centerImage from '../assets/front_center.JPG';
+//import centerImage from '../assets/front_center.JPG';
 import facebookIcon from '../assets/icons/icons8-facebook-128.png';
 import instagramIcon from '../assets/icons/icons8-instagram-128.png';
 import { connect } from 'react-redux';
