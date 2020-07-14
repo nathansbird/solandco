@@ -1,0 +1,5 @@
+export const LOAD_FAIL = "LOAD_FAIL";
+export const LOAD_SUCCEED = "LOAD_SUCCEED";
+export const CLIENT_CREATED = 'CLIENT_CREATED';
+export const CHECKOUT_CREATED = 'CHECKOUT_CREATED';
+export const ITEM_ADDED = 'ITEM_ADDED';
