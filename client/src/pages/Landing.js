@@ -101,7 +101,7 @@ const Landing = ({createCheckout, getStock, store}) => {
         <div id="right">
           <h1 id="title">Stories</h1>
           <p id="desc">Read about how Sol &amp; Co is impacting the world beyond fashion</p>
-          <a href="/blogs/a-voice-to-the-voiceless/a-voice-for-the-voiceless"><p><span>READ BLOG<i className="material-icons">navigate_next</i></span></p></a>
+          <a href="https://thesolandco.myshopify.com/blogs/a-voice-to-the-voiceless/a-voice-for-the-voiceless" target="_blank"><p><span>READ BLOG<i className="material-icons">navigate_next</i></span></p></a>
         </div>
       </div>
       <div id="footer">
